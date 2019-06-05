@@ -1,0 +1,485 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{cote_porous_2005}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Côté}{C.}%
+     {Adrien~P.}{A.~P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Benin}{B.}%
+     {Annabelle~I.}{A.~I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ockwig}{O.}%
+     {Nathan~W.}{N.~W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {O'Keeffe}{O.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Matzger}{M.}%
+     {Adam~J.}{A.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yaghi}{Y.}%
+     {Omar~M.}{O.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {en}%
+  }
+  \strng{namehash}{CAP+1}
+  \strng{fullhash}{CAPBAIONWOMMAJYOM1}
+  \field{abstract}{%
+  Covalent organic frameworks (COFs) have been designed and successfully
+  synthesized by condensation reactions of phenyl diboronic acid
+  \{C6H4[B(OH)2]2\} and hexahydroxytriphenylene [C18H6(OH)6]. Powder x-ray
+  diffraction studies of the highly crystalline products (C3H2BO)6·(C9H12)1
+  (COF-1) and C9H4BO2 (COF-5) revealed expanded porous graphitic layers that
+  are either staggered (COF-1, P63/mmc) or eclipsed (COF-5, P6/mmm). Their
+  crystal structures are entirely held by strong bonds between B, C, and O
+  atoms to form rigid porous architectures with pore sizes ranging from 7 to 27
+  angstroms. COF-1 and COF-5 exhibit high thermal stability (to temperatures up
+  to 500° to 600°C), permanent porosity, and high surface areas (711 and 1590
+  square meters per gram, respectively). Condensation of organic boron
+  compounds produces useful materials containing large pores that are stable to
+  high temperatures and do not require linking metal atoms. Condensation of
+  organic boron compounds produces useful materials containing large pores that
+  are stable to high temperatures and do not require linking metal atoms.%
+  }
+  \verb{doi}
+  \verb 10.1126/science.1120411
+  \endverb
+  \field{issn}{0036-8075, 1095-9203}
+  \field{number}{5751}
+  \field{pages}{1166\bibrangedash 1170}
+  \field{title}{Porous, {Crystalline}, {Covalent} {Organic} {Frameworks}}
+  \verb{url}
+  \verb https://science.sciencemag.org/content/310/5751/1166
+  \endverb
+  \field{volume}{310}
+  \field{journaltitle}{Science}
+  \field{month}{11}
+  \field{year}{2005}
+  \field{urlday}{27}
+  \field{urlmonth}{05}
+  \field{urlyear}{2019}
+\endentry
+
+\entry{grimme_robust_2017}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Grimme}{G.}%
+     {Stefan}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bannwarth}{B.}%
+     {Christoph}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shushkov}{S.}%
+     {Philip}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GSBCSP1}
+  \strng{fullhash}{GSBCSP1}
+  \field{abstract}{%
+  We propose a novel, special purpose semiempirical tight binding (TB) method
+  for the calculation of structures, vibrational frequencies, and noncovalent
+  interactions of large molecular systems with 1000 or more atoms. The
+  functional form of the method is related to the self-consistent density
+  functional TB scheme and mostly avoids element-pair-specific parameters. The
+  parametrization covers all spd-block elements and the lanthanides up to Z =
+  86 using reference data at the hybrid density functional theory level. Key
+  features of the Hamiltonian are the use of partially polarized Gaussian-type
+  orbitals, a double-ζ orbital basis for hydrogen, atomic-shell charges,
+  diagonal third-order charge fluctuations, coordination number-dependent
+  energy levels, a noncovalent halogen-bond potential, and the well-established
+  D3 dispersion correction. The accuracy of the method, called Geometry,
+  Frequency, Noncovalent, eXtended TB (GFN-xTB), is extensively benchmarked for
+  various systems in comparison with existing semiempirical approaches, and the
+  method is applied to a few representative structural problems in chemistry.%
+  }
+  \verb{doi}
+  \verb 10.1021/acs.jctc.7b00118
+  \endverb
+  \field{issn}{1549-9618}
+  \field{number}{5}
+  \field{pages}{1989\bibrangedash 2009}
+  \field{title}{A {Robust} and {Accurate} {Tight}-{Binding} {Quantum}
+  {Chemical} {Method} for {Structures}, {Vibrational} {Frequencies}, and
+  {Noncovalent} {Interactions} of {Large} {Molecular} {Systems} {Parametrized}
+  for {All} spd-{Block} {Elements} ({Z} = 1–86)}
+  \verb{url}
+  \verb https://doi.org/10.1021/acs.jctc.7b00118
+  \endverb
+  \field{volume}{13}
+  \field{journaltitle}{Journal of Chemical Theory and Computation}
+  \field{month}{05}
+  \field{year}{2017}
+  \field{urlday}{27}
+  \field{urlmonth}{05}
+  \field{urlyear}{2019}
+\endentry
+
+\entry{bannwarth_gfn2-xtb_2019}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Bannwarth}{B.}%
+     {Christoph}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ehlert}{E.}%
+     {Sebastian}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Grimme}{G.}%
+     {Stefan}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {en}%
+  }
+  \strng{namehash}{BCESGS1}
+  \strng{fullhash}{BCESGS1}
+  \field{abstract}{%
+  An extended semiempirical tight-binding model is presented, which is
+  primarily designed for the fast calculation of structures and noncovalent
+  interaction energies for molecular systems with roughly 1000 atoms. The
+  essential novelty in this so-called GFN2-xTB method is the inclusion of
+  anisotropic second order density ﬂuctuation eﬀects via shortrange damped
+  interactions of cumulative atomic multipole moments. Without noticeable
+  increase in the computational demands, this results in a less empirical and
+  overall more physically sound method, which does not require any classical
+  halogen or hydrogen bonding corrections and which relies solely on global and
+  element-speciﬁc parameters (available up to radon, Z = 86). Moreover, the
+  atomic partial charge dependent D4 London dispersion model is incorporated
+  self-consistently, which can be naturally obtained in a tight-binding picture
+  from second order density ﬂuctuations. Fully analytical and numerically
+  precise gradients (nuclear forces) are implemented. The accuracy of the
+  method is benchmarked for a wide variety of systems and compared with other
+  semiempirical methods. Along with excellent performance for the “target”
+  properties, we also ﬁnd lower errors for “oﬀ-target” properties such
+  as barrier heights and molecular dipole moments. High computational
+  eﬃciency along with the improved physics compared to its precursor GFN-xTB
+  makes this method well-suited to explore the conformational space of
+  molecular systems. Signiﬁcant improvements are furthermore observed for
+  various benchmark sets, which are prototypical for biomolecular systems in
+  aqueous solution.%
+  }
+  \field{pages}{20}
+  \field{title}{{GFN}2-{xTB} {An} {Accurate} and {Broadly} {Parametrized}
+  {Self}-{Consistent} {Tight}-{Binding} {Quantum} {Chemical} {Method} with
+  {Multipole} {Electrostatics} and {Density}-{Dependent} {Dispersion}
+  {Contributions}}
+  \field{journaltitle}{J. Chem. Theory Comput.}
+  \field{year}{2019}
+\endentry
+
+\entry{aradi_dftb+_2007}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Aradi}{A.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hourahine}{H.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Frauenheim}{F.}%
+     {Th.}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{ABHBFT1}
+  \strng{fullhash}{ABHBFT1}
+  \field{abstract}{%
+  A new Fortran 95 implementation of the DFTB (density functional-based tight
+  binding) method has been developed, where the sparsity of the DFTB system of
+  equations has been exploited. Conventional dense algebra is used only to
+  evaluate the eigenproblems of the system and long-range Coulombic terms, but
+  drop-in O(N) or O(N2) modules are planned to replace the small code sections
+  that these entail. The developed sparse storage structure is discussed in
+  detail, and a short overview of other features of the new code is given.%
+  }
+  \verb{doi}
+  \verb 10.1021/jp070186p
+  \endverb
+  \field{issn}{1089-5639}
+  \field{number}{26}
+  \field{pages}{5678\bibrangedash 5684}
+  \field{title}{{DFTB}+, a {Sparse} {Matrix}-{Based} {Implementation} of the
+  {DFTB} {Method}}
+  \verb{url}
+  \verb https://doi.org/10.1021/jp070186p
+  \endverb
+  \field{volume}{111}
+  \field{journaltitle}{The Journal of Physical Chemistry A}
+  \field{month}{07}
+  \field{year}{2007}
+  \field{urlday}{28}
+  \field{urlmonth}{05}
+  \field{urlyear}{2019}
+\endentry
+
+\entry{lorentz_ueber_1881}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Lorentz}{L.}%
+     {H.~A.}{H.~A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {en}%
+  }
+  \strng{namehash}{LHA1}
+  \strng{fullhash}{LHA1}
+  \verb{doi}
+  \verb 10.1002/andp.18812480110
+  \endverb
+  \field{issn}{1521-3889}
+  \field{number}{1}
+  \field{pages}{127\bibrangedash 136}
+  \field{title}{Ueber die {Anwendung} des {Satzes} vom {Virial} in der
+  kinetischen {Theorie} der {Gase}}
+  \verb{url}
+  \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.18812480110
+  \endverb
+  \field{volume}{248}
+  \field{journaltitle}{Annalen der Physik}
+  \field{year}{1881}
+  \field{urlday}{03}
+  \field{urlmonth}{06}
+  \field{urlyear}{2019}
+\endentry
+
+\entry{rappe_uff_1992}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Rappe}{R.}%
+     {A.~K.}{A.~K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Casewit}{C.}%
+     {C.~J.}{C.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Colwell}{C.}%
+     {K.~S.}{K.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Goddard}{G.}%
+     {W.~A.}{W.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Skiff}{S.}%
+     {W.~M.}{W.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {en}%
+  }
+  \strng{namehash}{RAK+1}
+  \strng{fullhash}{RAKCCJCKSGWASWM1}
+  \field{abstract}{%
+  A new molecular mechanics force field, the Universal force field (UFF), is
+  described wherein the force field parameters are estimated using general
+  rules based only on the element, its hybridization, and its connectivity. The
+  force field functional forms, parameters, and generating formulas for the
+  full periodic table are presented.%
+  }
+  \verb{doi}
+  \verb 10.1021/ja00051a040
+  \endverb
+  \field{issn}{0002-7863}
+  \field{number}{25}
+  \field{pages}{10024\bibrangedash 10035}
+  \field{title}{{UFF}, a full periodic table force field for molecular
+  mechanics and molecular dynamics simulations}
+  \verb{url}
+  \verb http://pubs.acs.org/doi/abs/10.1021/ja00051a040
+  \endverb
+  \field{volume}{114}
+  \field{journaltitle}{Journal of the American Chemical Society}
+  \field{month}{12}
+  \field{year}{1992}
+  \field{urlday}{05}
+  \field{urlmonth}{03}
+  \field{urlyear}{2019}
+\endentry
+
+\entry{kadantsev_fast_2013}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Kadantsev}{K.}%
+     {Eugene~S.}{E.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Boyd}{B.}%
+     {Peter~G.}{P.~G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Daff}{D.}%
+     {Thomas~D.}{T.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Woo}{W.}%
+     {Tom~K.}{T.~K.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KES+1}
+  \strng{fullhash}{KESBPGDTDWTK1}
+  \field{abstract}{%
+  The charge equilibration (QEq) method has been parametrized to reproduce the
+  ab-initio-derived electrostatic potential in a large and diverse training set
+  of 543 metal organic frameworks (MOFs) containing the most popular Zn, Cu,
+  and V structural building units (SBUs), 52 different organic carboxylate- and
+  nitrogen-capped SBUs, and the 17 functional groups. The MOF
+  electrostatic-potential-optimized charge scheme, or MEPO-QEq, was validated
+  by evaluating the CO2 uptake and heats of adsorption in the 543 member
+  training set and a nonoverlapping 693 member validation set. Compared with
+  the results obtained from ab-initio-derived charges, the MEPO-QEq charges
+  give Pearson (linear) and Spearman (rank-order) correlation coefficients of
+  {\textgreater}0.97 for these two sets. MEPO-QEq enables near-ab-initio
+  quality nonbonded electrostatic interactions to be evaluated using the fast
+  QEq method for fast and accurate virtual high-throughput screening of
+  gas-adsorption properties in MOFs.%
+  }
+  \verb{doi}
+  \verb 10.1021/jz401479k
+  \endverb
+  \field{issn}{1948-7185}
+  \field{number}{18}
+  \field{pages}{3056\bibrangedash 3061}
+  \field{title}{Fast and {Accurate} {Electrostatics} in {Metal} {Organic}
+  {Frameworks} with a {Robust} {Charge} {Equilibration} {Parameterization} for
+  {High}-{Throughput} {Virtual} {Screening} of {Gas} {Adsorption}}
+  \verb{url}
+  \verb https://doi.org/10.1021/jz401479k
+  \endverb
+  \field{volume}{4}
+  \verb{file}
+  \verb ACS Full Text Snapshot:/Users/vviterbo/Zotero/storage/SIATMW38/jz401479
+  \verb k.html:text/html
+  \endverb
+  \field{journaltitle}{The Journal of Physical Chemistry Letters}
+  \field{month}{09}
+  \field{year}{2013}
+  \field{urlday}{04}
+  \field{urlmonth}{06}
+  \field{urlyear}{2019}
+\endentry
+
+\entry{rappe_charge_1991}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Rappe}{R.}%
+     {Anthony~K.}{A.~K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Goddard}{G.}%
+     {William~A.}{W.~A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {en}%
+  }
+  \strng{namehash}{RAKGWA1}
+  \strng{fullhash}{RAKGWA1}
+  \verb{doi}
+  \verb 10.1021/j100161a070
+  \endverb
+  \field{issn}{0022-3654, 1541-5740}
+  \field{number}{8}
+  \field{pages}{3358\bibrangedash 3363}
+  \field{title}{Charge equilibration for molecular dynamics simulations}
+  \verb{url}
+  \verb http://pubs.acs.org/doi/abs/10.1021/j100161a070
+  \endverb
+  \field{volume}{95}
+  \verb{file}
+  \verb Rappe and Goddard - 1991 - Charge equilibration for molecular dynamics
+  \verb simula.pdf:/Users/vviterbo/Zotero/storage/LAN6RT3H/Rappe and Goddard -
+  \verb 1991 - Charge equilibration for molecular dynamics simula.pdf:applicati
+  \verb on/pdf
+  \endverb
+  \field{journaltitle}{The Journal of Physical Chemistry}
+  \field{month}{04}
+  \field{year}{1991}
+  \field{urlday}{04}
+  \field{urlmonth}{06}
+  \field{urlyear}{2019}
+\endentry
+
+\entry{lee_ewald_nodate}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Lee}{L.}%
+     {Hark}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cai}{C.}%
+     {Wei}{W.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {en}%
+  }
+  \strng{namehash}{LHCW1}
+  \strng{fullhash}{LHCW1}
+  \field{pages}{12}
+  \field{title}{Ewald {Summation} for {Coulomb} {Interactions} in a {Periodic}
+  {Supercell}}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

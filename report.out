@@ -1,0 +1,8 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Methodology}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{General Considerations}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Lennard-Jones}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Charge Calculations}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Coulombic Potential and Ewald Summation}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.5}{Density Functional Theory}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.6}{Geometry, Frequency, Non-bonding - Tight Binding method \(GFN2-xTB\)}{section.2}% 8

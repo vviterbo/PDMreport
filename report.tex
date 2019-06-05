@@ -1,0 +1,241 @@
+\documentclass[12pt,a4paper]{article}
+% Options possibles : 10pt, 11pt, 12pt (taille de la fonte) % oneside, twoside (recto simple, recto-verso) % draft, final (stade de d̩veloppement)
+%\usepackage[utf8]{inputenc} % LaTeX, comprends les accents ! 
+%\usepackage[T1]{fontenc} % Police contenant les caract̬res fran̤ais \usepackage[francais,english]{babel} % Placez ici une liste de langues, la 
+%\usepackage{gensymb} % derni̬re ̩tant la langue principale 
+\usepackage{braket} 
+\usepackage[a4paper]{geometry}% R̩duire les marges % 
+\pagestyle{headings} % Pour mettre des ent̻tes avec les titres
+ \usepackage[all]{xy} 
+ \usepackage{graphicx} 
+\usepackage{tabularx}
+\usepackage[utf8]{inputenc}
+\usepackage[demo]{graphicx} 
+\usepackage{siunitx}
+\usepackage[nottoc]{tocbibind}
+%\usepackage{cite}
+%\usepackage[backend=biber,hyperref=true,backref=false,sorting=none,style=nature,citestyle=numeric,maxcitenames=100,maxbibnames=1000]{biblatex}
+\usepackage[hidelinks]{hyperref}
+\usepackage[backend=bibtex, sorting=none,hyperref=true]{biblatex}
+%\bibliographystyle{unsrt}
+\bibliography{biblio}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+
+\tikzstyle{block} = [rectangle, draw, fill=blue!60, 
+    text width=25em, text centered, rounded corners, minimum height=1em]
+\tikzstyle{line} = [draw, -latex']
+%\bibliography{biblio.bib}       
+\phantomsection
+\usepackage{amsmath}
+\usepackage{comment} 
+\usepackage{xcolor}
+\usepackage{float} % des sections en haut de page 
+\usepackage[left=3cm,right=2cm,top=3cm,bottom=2cm]{geometry}
+\usepackage{fancyhdr} 
+\usepackage[utf8]{inputenc} % LaTeX, comprends les accents ! 
+\fancyhf{}
+\cfoot{\thepage}
+\pagestyle{fancy} 
+\begin{titlepage}
+\title{Assessment of COF stacking} % Les param̬tres du titre� : titre, auteur, date 
+\author{LMSO \\ 
+\\ Prof. Berend Smit \\ 
+\\ Andres Ortega Guerrero\\ 
+\\ Viterbo Victor
+\\
+\\} % La date n'est pas requise (la date du % jour de compilation est utilis̩e en son % absence)
+%\date{August, 31 2018}
+\sloppy % Ne pas faire d̩border les lignes dans la marges
+
+\cfoot{\thepage}
+\begin{document} 
+\maketitle 
+\begin{figure}[H] 
+\includegraphics[width=100mm]{EPFL_Logo.pdf}
+\centering 
+\end{figure}
+\clearpage 
+\end{titlepage}
+\tableofcontents
+\clearpage
+
+\section{Introduction}
+
+Covalent Organic Frameworks are a novel class of materials made from self assembled small organic molecules, imagined and first synthesised by C\^{o}t\'e et al. in 2005 \cite{cote_porous_2005}. First COFs were two-dimensional polymers formed by a dehydration condensation reaction of boronic acid ($RB(OH)_2$) into boroxin rings ($R_3(BO)_3$). Latter, more diverse ligands and structures were elaborated, by adding vertical linkers to yield three- dimensional polymers or the use of triazine or imine condensation instead of boronic ones.
+
+These materials drew an increasing interest because of their lightness, porosity and optical properties all the while being easy to functionalise, and are therefor excellent candidates for gas separation and storage, heterogeneous catalysis or electrochemistry; but this very high tunability of the material also makes the number of ligand combination extremely large. 
+
+Since experimental chemistry would be unable to assess such amounts of structures, in part due to technical limitations like the high sensitivity to defects of x-ray diffraction, and the low crystallinity of theses materials. In some cases High Resolution Transmission Electron Microscopy can give some property like the single layer vector but is unable to asses its stacking. Hence, the advantage of using computational chemistry becomes obvious : it makes it possible to test for a property in a systematic fashion among a very large number of materials without the need for synthesis. 
+
+Since COFs' properties are strongly dependant on their stacking structure, wether it be geometric ones for gas adsorption and separation or electronic ones for optoelectronic processes, the first step of the calculation is to compute it as accurately as possible to then obtain more complex properties of the material. The problem is now that accurate calculations are very expensive machine-time-wise and the possible structures are very numerous especially when theses combinations are put together with the number of materials to test. To alleviate this cost, the solution chosen here is to make a first estimation of the structure using a method as cheap as possible that still gives a useful starting point for more in-depth optimisation. In this setting, the work detailed below aims at finding the best compromise between calculations that are too expensive to be interesting as a pre-screener and the ones that are not accurate enough to give a useful initial guess for the rest of the treatment. With this idea, different computational technics were tested on a diverse set of COFs in order to evaluate the complexity of calculations needed to achieve reasonable precision. These technics, from simplest to most elaborate are : the Lennard-Jones potential, Lennard-Jones and Coulombic interactions, GFN2-xTB \cite{grimme_robust_2017,bannwarth_gfn2-xtb_2019} and DFTB+ \cite{aradi_dftb+_2007}. 
+
+Furthermore, by scanning all possible x,y,z offsets from one layer to the next it is possible to asses the cristalinity of the material : a steep, smooth potential would yield high crystallinity while irregularities and flatness in the Potential Energy Surface would yield lower crystallinity. This can be of the utmost importance when aiming at applications like light harvesting where irregularity in the crystalline structure can strongly impair the material's efficiency.
+
+
+\section{Methodology}
+
+%\subsection {Workflow Overview}
+\nopagebreak
+
+\begin{figure}\centering
+\begin{tikzpicture}[node distance = 2cm, auto]\centering
+    % Place nodes
+    \node [block] (db) {COF database};
+    \node [block,below of=db] (import) {Import COF and isolate single layer};
+    \node [block, below of=import] (charges) {If needed compute the charges using EGULP} ;
+    \node [block, below of=charges] (struct_gen) {Generate a structure using a given x,y,z offset};
+    \node [block, below of=struct_gen] (LJ) {Compute Lennard-Jones Potential resulting from interactions between the atoms of the two sheets};
+    \node [block, below of=LJ] (export) {Export generated structure};
+    \node [block,below of=export] (funcall) {Process structure though LAMMPS, xTB, DFTB+};
+    \node [block, below of=funcall] (collect) {Collect and plot results};
+    
+  \path [line] (db) -- (import);
+  \path [line] (import) -- (charges) ;
+  \path [line] (charges) -- (struct_gen);
+  \path [line] (struct_gen) -- (LJ);
+  \path [line] (LJ) -- (export);
+  \path [line] (export) -- (funcall);
+  \path [line] (funcall) -- (collect);
+  \path [line] (funcall.west) -- ++(-1,0) -- ++ (0,6) -- ++(1,0)  ;
+  \path [line] (collect.west) -- ++(-2,0) -- ++ (0,12) -- ++(2,0)  ;
+\end{tikzpicture}
+\caption{\textit{Overview of the workflow in the setting of this project}}
+\end{figure}
+
+
+
+\subsection{General Considerations}
+
+To avoid artefacts, each COF was studied using its experimental structure (theoretical bond-angles and bond-lengths) and using this same structure but relaxed using CP2K's geometry and cell optimisation.
+
+\subsection{Lennard-Jones}
+The Lennard-Jones potential is a classical approximation of non-binding interactions where interaction potential between two elements i and j is given by :
+$$E_{LJ}=4\epsilon_{ij}\left[\left(\frac{\sigma_{ij}}{r_{ij}}\right)^{12}-\left(\frac{\sigma_{ij}}{r_{ij}}\right)^{6}\right]$$
+where and $\epsilon_{ij}$ and $\sigma_{ij}$ are pair-specific parameters. 
+The positive part sands for the repulsion that results from the Pauli exclusion principle and the negative one for the coulombic attraction. The exponents were chosen for computational simplicity.
+
+In our case the pair-wise parameters where obtained using the Lorentz-Berthelot \cite{lorentz_ueber_1881} rules :
+$$ \sigma_{ij}=\sqrt{\sigma_i\sigma_j}   $$ and $$ \epsilon_{ij}=\frac{\epsilon_i + \epsilon_j}{2}$$
+where $\sigma_i$ and $\epsilon_i$ are the atom-specific parameters for element i
+The parameter used are the Universal Force Field  ones from Rapp\'e et al. \cite{rappe_uff_1992}
+The tail correction used here was the truncated-shifted potential where the potential at cutoff is added to ensure a smooth potential.
+
+\subsection{Charge Calculations}
+
+For the experimental structures, no charges where given and where hence computed for a single sheet using the charge equilibration Qeq from EGULP subroutine \cite{kadantsev_fast_2013}. This method is also based on the Universal Force Field's parameters. The core principle behind this method is a second-order Taylor expansion, truncated to the second order, of the charge dependant energy ($E(Q)$)\cite{rappe_charge_1991}. This parametrisation makes this problem computationally cheap.
+
+\subsection{Coulombic Potential and Ewald Summation}
+
+The Coulombic potential is given by :
+$$E_c=k_e\frac{q_iq_j}{r_{ij}}$$
+where $k_e$ is the Coulomb's constant, $q_i$ and $q_j$ the charge of the atoms i and j respectively, and $r_{ij}$ the distance between the two atoms. 
+Since this potential converges slowly, it is important to take into account the long range interactions. A natural way to do so would be a very high cutoff but it would strongly increase the computational cost drastically. To tackle this problem, one can take advantage of the periodicity of the system and compute separately the short range interactions by summing them in real space and sum the long range interactions in reciprocal space : this is known as the Ewald summation \cite{lee_ewald_nodate}, which is a special case of the Poisson summation. The charge density is split as follow :
+$$\rho_i(r) = \rho_i^S(r)+\rho_i^L(r)$$
+where $\rho_i^S(r)$, the short range function is as follow
+$$\rho_i^S(r) = q_i\delta(r-r_i)-q_iG_\sigma(r-r_i)$$
+and $\rho_i^L(r)$, the long range function :
+$$\rho_i^L(r)=q_iG_\sigma(r-r_i)$$
+with 
+$$G_\sigma=\frac{1}{(2\pi\sigma^2)^{3/2}}exp\left[-\frac{|r|^2}{2\sigma^2}\right]$$
+The substitution above is equivalent to adding and subtracting a guassian function around each point charge, described by the dirac delta function. This will shield long range interactions in the short-range function and the long range 
+We then integrate the short range function in real space and the long range in reciprocal space.
+This technic allows for fast convergence of the Coulombic potential in periodic systems. 
+
+For this project, the implementation of the Ewald Summation used is from LAMMPS (Large Scale Atomic/Molecular Massively Parallel Simulator)\cite{plimpton_fast_nodate}
+
+
+\subsection{Density Functional Theory}
+In order to be able to grasp the principle of the two following technics, it is important to first go through the principle that is the foundation of almost all newly developed technics : the Density Functional Theory. It lies on the equivalence between treating $N$ one-electron wavefunction $\Psi_i$ and one $N$ electron density function $n(r)$ with :
+$$n(r)=\sum_i|\Psi(r_i)|^2$$
+where the summation is done over the $i$ electrons.
+It is based on the fact that a non-degenerate ground state of a $N$ electron system is fully determined for a given external potential, and hence :
+$$V_{ext} \leftrightarrow n(r)$$
+The first Hohnenberg-Kohn theorem goes further and state that a unique functional of the density function $n(r)$ exists and yield the energy of the system.
+The second Hohnenberg-Kohn theorem state that the true density function of the ground state is the one that minimise the energy.
+Together these theorems are the foundation of DFT calculations.
+ 
+\subsection{Geometry, Frequency, Non-bonding - Tight Binding method (GFN2-xTB)}
+
+GFN2-xTB is a method that uses parameters that are atom-specific and mostly lies on 
+
+
+
+
+
+\begin{figure}[H]  \centering
+\includegraphics[width=140mm,angle=0]{../2-atom-LJ/2-atom-with-analytical.pdf} 
+\caption{\textit{Analytical, Python computed and LAMMPS computed LJ potential for two B atoms}}
+\end{figure}
+
+\begin{figure}[H]  \centering
+\includegraphics[width=140mm,angle=0]{../ful-sheet-pbc-LJ/ful-sheet-pbc-LJ_zoom.pdf} 
+\caption{\textit{LJ potential for the two full sheets }}
+\end{figure}
+
+\begin{figure}[H]  \centering
+\includegraphics[width=140mm,angle=0]{../cutoffLJ2/cutoffLJ2_broad.pdf} 
+\caption{\textit{LJ potential for the two sheets, as a function of the cutoff}}
+\end{figure}
+
+\begin{figure}[H]  \centering
+\includegraphics[width=140mm,angle=0]{../cutoffLJ2/cutoffLJ2_zoom.pdf} 
+\caption{\textit{LJ potential for the two sheets, as a function of the cutoff}}
+\end{figure}
+
+\begin{figure}[H]  \centering
+\includegraphics[width=140mm,angle=0]{../sigma50cutoff/sigma50cutoff_zoom.pdf} 
+\caption{\textit{Coulombic potential with real Ewald correction for Python, full Ewald for LAMMPS; sigma=0.5*cutoff}}
+\end{figure}
+
+\begin{figure}[H]  \centering
+\includegraphics[width=140mm,angle=0]{../sigma075cutoff/sigma075cutoff_zoom.pdf} 
+\caption{\textit{Coulombic potential with real Ewald correction for Python, full Ewald for LAMMPS; sigma=0.75*cutoff}}
+\end{figure}
+
+\begin{figure}[H]  \centering
+\includegraphics[width=140mm,angle=0]{../sigma150cutoff/sigma150cutoff_zoom.pdf} 
+\caption{\textit{Coulombic potential with real Ewald correction for Python, full Ewald for LAMMPS; sigma=0.75*cutoff}}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{comment}
+\begin{figure}[H]
+\begin{tabularx}{\textwidth} { >{\centering \arraybackslash}X| >{\centering \arraybackslash}X| >{\centering \arraybackslash}X| >{\centering \arraybackslash}X| >{\centering \arraybackslash}X| >{\centering \arraybackslash}X| >{\centering \arraybackslash}X}
+Scan Rate [mV/s] & \multicolumn{2}{c|}{$\frac{i^{Ox}}{i^{Red}} [-]$} & \multicolumn{2}{c|}{$\frac{i^{Ox}_{25}}{i^{Ox}} [-]$} & \multicolumn{2}{c|}{$\Delta E_p  [mV]$} \\
+\hline
+\hline
+& Au & Ni & Au & Ni & Au & Ni \\
+\hline
+\hline
+25 & 1.056 & 1.059 & 1 & 1 & 74 & 94\\
+\hline
+50 & 1.059 & 1.114 & 1.017 & 1.010 & 74 & 98\\
+\hline
+75 & 1.062 & 1.131 & 1.024 & 1.021 & 72 & 104\\
+\hline
+100 & 1.068 & 1.155 & 1.025 & 1.033 & 74 & 110\\
+\hline
+150 & 1.073 & 1.196 & 1.029 & 1.063 & 74 & 120\\
+\hline
+200 & 1.075 & 1.238 & 1.030 & 1.076 & 74 & 126\\
+\hline
+300 & 1.077 & 1.336 & 1.029 & 1.107 & 76 & 138\\
+\end{tabularx}
+\caption{\textit{From left to right: scan rate, ratio of the oxidative peak height over the reductive peak height, normalised oxidative peak height at a given scan rate over the normalised peak height at 25 mV/s, peak to peak separation.}}
+\end{figure}
+\end{comment}
+%\bibliography{biblio}
+\printbibliography
+\end{document}
