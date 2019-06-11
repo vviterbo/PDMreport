@@ -49,10 +49,7 @@
      {}{}%
      {}{}}%
   }
-  \list{language}{1}{%
-    {en}%
-  }
-  \strng{namehash}{CAP+1}
+  \strng{namehash}{CAPBAIONWOMMAJYOM1}
   \strng{fullhash}{CAPBAIONWOMMAJYOM1}
   \field{abstract}{%
   Covalent organic frameworks (COFs) have been designed and successfully
@@ -86,6 +83,55 @@
   \field{month}{11}
   \field{year}{2005}
   \field{urlday}{27}
+  \field{urlmonth}{05}
+  \field{urlyear}{2019}
+\endentry
+
+\entry{aradi_dftb+_2007}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Aradi}{A.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hourahine}{H.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Frauenheim}{F.}%
+     {Th.}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{ABHBFT1}
+  \strng{fullhash}{ABHBFT1}
+  \field{abstract}{%
+  A new Fortran 95 implementation of the DFTB (density functional-based tight
+  binding) method has been developed, where the sparsity of the DFTB system of
+  equations has been exploited. Conventional dense algebra is used only to
+  evaluate the eigenproblems of the system and long-range Coulombic terms, but
+  drop-in O(N) or O(N2) modules are planned to replace the small code sections
+  that these entail. The developed sparse storage structure is discussed in
+  detail, and a short overview of other features of the new code is given.%
+  }
+  \verb{doi}
+  \verb 10.1021/jp070186p
+  \endverb
+  \field{issn}{1089-5639}
+  \field{number}{26}
+  \field{pages}{5678\bibrangedash 5684}
+  \field{title}{{DFTB}+, a {Sparse} {Matrix}-{Based} {Implementation} of the
+  {DFTB} {Method}}
+  \verb{url}
+  \verb https://doi.org/10.1021/jp070186p
+  \endverb
+  \field{volume}{111}
+  \field{journaltitle}{The Journal of Physical Chemistry A}
+  \field{month}{07}
+  \field{year}{2007}
+  \field{urlday}{28}
   \field{urlmonth}{05}
   \field{urlyear}{2019}
 \endentry
@@ -206,52 +252,63 @@
   \field{year}{2019}
 \endentry
 
-\entry{aradi_dftb+_2007}{article}{}
-  \name{author}{3}{}{%
+\entry{rappe_uff_1992}{article}{}
+  \name{author}{5}{}{%
     {{}%
-     {Aradi}{A.}%
-     {B.}{B.}%
+     {Rappe}{R.}%
+     {A.~K.}{A.~K.}%
      {}{}%
      {}{}}%
     {{}%
-     {Hourahine}{H.}%
-     {B.}{B.}%
+     {Casewit}{C.}%
+     {C.~J.}{C.~J.}%
      {}{}%
      {}{}}%
     {{}%
-     {Frauenheim}{F.}%
-     {Th.}{T.}%
+     {Colwell}{C.}%
+     {K.~S.}{K.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Goddard}{G.}%
+     {W.~A.}{W.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Skiff}{S.}%
+     {W.~M.}{W.~M.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{ABHBFT1}
-  \strng{fullhash}{ABHBFT1}
+  \list{language}{1}{%
+    {en}%
+  }
+  \strng{namehash}{RAKCCJCKSGWASWM1}
+  \strng{fullhash}{RAKCCJCKSGWASWM1}
   \field{abstract}{%
-  A new Fortran 95 implementation of the DFTB (density functional-based tight
-  binding) method has been developed, where the sparsity of the DFTB system of
-  equations has been exploited. Conventional dense algebra is used only to
-  evaluate the eigenproblems of the system and long-range Coulombic terms, but
-  drop-in O(N) or O(N2) modules are planned to replace the small code sections
-  that these entail. The developed sparse storage structure is discussed in
-  detail, and a short overview of other features of the new code is given.%
+  A new molecular mechanics force field, the Universal force field (UFF), is
+  described wherein the force field parameters are estimated using general
+  rules based only on the element, its hybridization, and its connectivity. The
+  force field functional forms, parameters, and generating formulas for the
+  full periodic table are presented.%
   }
   \verb{doi}
-  \verb 10.1021/jp070186p
+  \verb 10.1021/ja00051a040
   \endverb
-  \field{issn}{1089-5639}
-  \field{number}{26}
-  \field{pages}{5678\bibrangedash 5684}
-  \field{title}{{DFTB}+, a {Sparse} {Matrix}-{Based} {Implementation} of the
-  {DFTB} {Method}}
+  \field{issn}{0002-7863}
+  \field{number}{25}
+  \field{pages}{10024\bibrangedash 10035}
+  \field{title}{{UFF}, a full periodic table force field for molecular
+  mechanics and molecular dynamics simulations}
   \verb{url}
-  \verb https://doi.org/10.1021/jp070186p
+  \verb http://pubs.acs.org/doi/abs/10.1021/ja00051a040
   \endverb
-  \field{volume}{111}
-  \field{journaltitle}{The Journal of Physical Chemistry A}
-  \field{month}{07}
-  \field{year}{2007}
-  \field{urlday}{28}
-  \field{urlmonth}{05}
+  \field{volume}{114}
+  \field{journaltitle}{Journal of the American Chemical Society}
+  \field{month}{12}
+  \field{year}{1992}
+  \field{urlday}{05}
+  \field{urlmonth}{03}
   \field{urlyear}{2019}
 \endentry
 
@@ -287,66 +344,6 @@
   \field{urlyear}{2019}
 \endentry
 
-\entry{rappe_uff_1992}{article}{}
-  \name{author}{5}{}{%
-    {{}%
-     {Rappe}{R.}%
-     {A.~K.}{A.~K.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Casewit}{C.}%
-     {C.~J.}{C.~J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Colwell}{C.}%
-     {K.~S.}{K.~S.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Goddard}{G.}%
-     {W.~A.}{W.~A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Skiff}{S.}%
-     {W.~M.}{W.~M.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{language}{1}{%
-    {en}%
-  }
-  \strng{namehash}{RAK+1}
-  \strng{fullhash}{RAKCCJCKSGWASWM1}
-  \field{abstract}{%
-  A new molecular mechanics force field, the Universal force field (UFF), is
-  described wherein the force field parameters are estimated using general
-  rules based only on the element, its hybridization, and its connectivity. The
-  force field functional forms, parameters, and generating formulas for the
-  full periodic table are presented.%
-  }
-  \verb{doi}
-  \verb 10.1021/ja00051a040
-  \endverb
-  \field{issn}{0002-7863}
-  \field{number}{25}
-  \field{pages}{10024\bibrangedash 10035}
-  \field{title}{{UFF}, a full periodic table force field for molecular
-  mechanics and molecular dynamics simulations}
-  \verb{url}
-  \verb http://pubs.acs.org/doi/abs/10.1021/ja00051a040
-  \endverb
-  \field{volume}{114}
-  \field{journaltitle}{Journal of the American Chemical Society}
-  \field{month}{12}
-  \field{year}{1992}
-  \field{urlday}{05}
-  \field{urlmonth}{03}
-  \field{urlyear}{2019}
-\endentry
-
 \entry{kadantsev_fast_2013}{article}{}
   \name{author}{4}{}{%
     {{}%
@@ -370,7 +367,7 @@
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{KES+1}
+  \strng{namehash}{KESBPGDTDWTK1}
   \strng{fullhash}{KESBPGDTDWTK1}
   \field{abstract}{%
   The charge equilibration (QEq) method has been parametrized to reproduce the
@@ -477,6 +474,238 @@
   \field{pages}{12}
   \field{title}{Ewald {Summation} for {Coulomb} {Interactions} in a {Periodic}
   {Supercell}}
+\endentry
+
+\entry{plimpton_fast_nodate}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Plimpton}{P.}%
+     {Steve}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {en}%
+  }
+  \strng{namehash}{PS1}
+  \strng{fullhash}{PS1}
+  \field{abstract}{%
+  Three parallel algorithms for classical molecular dynamics are presented. The
+  ﬁrst assigns each processor a ﬁxed subset of atoms; the second assigns
+  each a ﬁxed subset of inter–atomic forces to compute; the third assigns
+  each a ﬁxed spatial region. The algorithms are suitable for molecular
+  dynamics models which can be diﬃcult to parallelize eﬃciently — those
+  with short–range forces where the neighbors of each atom change rapidly.
+  They can be implemented on any distributed–memory parallel machine which
+  allows for message–passing of data between independently executing
+  processors. The algorithms are tested on a standard Lennard–Jones benchmark
+  problem for system sizes ranging from 500 to 100,000,000 atoms on several
+  parallel supercomputers — the nCUBE 2, Intel iPSC/860 and Paragon, and Cray
+  T3D. Comparing the results to the fastest reported vectorized Cray Y–MP and
+  C90 algorithm shows that the current generation of parallel machines is
+  competitive with conventional vector supercomputers even for small problems.
+  For large problems, the spatial algorithm achieves parallel eﬃciencies of
+  90\% and a 1840–node Intel Paragon performs up to 165 faster than a single
+  Cray C90 processor. Trade–oﬀs between the three algorithms and guidelines
+  for adapting them to more complex molecular dynamics simulations are also
+  discussed.%
+  }
+  \field{pages}{42}
+  \field{title}{Fast {Parallel} {Algorithms} for {Short}–{Range} {Molecular}
+  {Dynamics}}
+  \verb{file}
+  \verb Plimpton - Fast Parallel Algorithms for Short–Range Molecular.pdf:/Us
+  \verb ers/vviterbo/Zotero/storage/R8RJUI3C/Plimpton - Fast Parallel Algorithm
+  \verb s for Short–Range Molecular.pdf:application/pdf
+  \endverb
+  \field{year}{1993-95}
+\endentry
+
+\entry{pulay_convergence_1980}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Pulay}{P.}%
+     {Péter}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{PP2}
+  \strng{fullhash}{PP2}
+  \field{abstract}{%
+  Based on a recent method of Pople et al for the solution of large systems of
+  linear equations, a procedure is given for accelerating the convergence of
+  slowly converging quasi-Newton— Raphson type algorithms. This procedure is
+  particularly advantageous if the number of parameters is so large that the
+  calculation and storage of the hessian is no longer practical. Application to
+  the SCF problem is treated in detail.%
+  }
+  \verb{doi}
+  \verb 10.1016/0009-2614(80)80396-4
+  \endverb
+  \field{issn}{0009-2614}
+  \field{number}{2}
+  \field{pages}{393\bibrangedash 398}
+  \field{title}{Convergence acceleration of iterative sequences. the case of
+  scf iteration}
+  \verb{url}
+  \verb http://www.sciencedirect.com/science/article/pii/0009261480803964
+  \endverb
+  \field{volume}{73}
+  \verb{file}
+  \verb ScienceDirect Full Text PDF:/Users/vviterbo/Zotero/storage/P4GPJMG9/Pul
+  \verb ay - 1980 - Convergence acceleration of iterative sequences. t.pdf:appl
+  \verb ication/pdf;ScienceDirect Snapshot:/Users/vviterbo/Zotero/storage/HAKUP
+  \verb L25/0009261480803964.html:text/html
+  \endverb
+  \field{journaltitle}{Chemical Physics Letters}
+  \field{month}{07}
+  \field{year}{1980}
+  \field{urlday}{10}
+  \field{urlmonth}{06}
+  \field{urlyear}{2019}
+\endentry
+
+\entry{pulay_improved_1982}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Pulay}{P.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {en}%
+  }
+  \strng{namehash}{PP1}
+  \strng{fullhash}{PP1}
+  \field{abstract}{%
+  An improved version of the direct inversion in the iterative subspace
+  algorithm is developed. The method is significantly more efficient than the
+  previous version, and is applicable to intrinsically divergent or slowly
+  convergent cases. Comparisons indicate that the method is superior to the
+  recently proposed quadratically convergent (QC–SCF) method of Bacskay.%
+  }
+  \verb{doi}
+  \verb 10.1002/jcc.540030413
+  \endverb
+  \field{issn}{1096-987X}
+  \field{number}{4}
+  \field{pages}{556\bibrangedash 560}
+  \field{title}{Improved {SCF} convergence acceleration}
+  \verb{url}
+  \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.540030413
+  \endverb
+  \field{volume}{3}
+  \verb{file}
+  \verb Full Text PDF:/Users/vviterbo/Zotero/storage/UVS4TT42/Pulay - 1982 - Im
+  \verb proved SCF convergence acceleration.pdf:application/pdf;Snapshot:/Users
+  \verb /vviterbo/Zotero/storage/WCCK8SKU/jcc.html:text/html
+  \endverb
+  \field{journaltitle}{Journal of Computational Chemistry}
+  \field{year}{1982}
+  \field{urlday}{10}
+  \field{urlmonth}{06}
+  \field{urlyear}{2019}
+\endentry
+
+\entry{shepard_comments_2007}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Shepard}{S.}%
+     {Ron}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Minkoff}{M.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{DIIS, Least squares, Optimization}
+  \strng{namehash}{SRMM1}
+  \strng{fullhash}{SRMM1}
+  \field{abstract}{%
+  Over twenty ways to solve the DIIS equation are introduced and discussed.
+  Some of these solution methods are inherently inaccurate and are never
+  recommended, others have some efficiency or accuracy advantages that may be
+  exploited in different situations. Two of these ways, linear least squares
+  with substitution and elimination, and linear least squares with equality
+  constraint, have the potential to produce solutions that are significantly
+  more accurate than the traditional normal equation solutions. The choice of
+  the most accurate solution approach for a given problem depends on various
+  vector and matrix norm relations which are discussed. The advantage of one of
+  these methods is demonstrated on a model problem, which has a closed-form
+  solution. A simple geometrical interpretation is given for the DIIS method
+  that involves minimization of a function value within a particular
+  multidimensional plane.%
+  }
+  \verb{doi}
+  \verb 10.1080/00268970701691611
+  \endverb
+  \field{issn}{0026-8976}
+  \field{number}{19-22}
+  \field{pages}{2839\bibrangedash 2848}
+  \field{title}{Some comments on the {DIIS} method}
+  \verb{url}
+  \verb https://doi.org/10.1080/00268970701691611
+  \endverb
+  \field{volume}{105}
+  \verb{file}
+  \verb Full Text PDF:/Users/vviterbo/Zotero/storage/H3NACC89/Shepard and Minko
+  \verb ff - 2007 - Some comments on the DIIS method.pdf:application/pdf;Snapsh
+  \verb ot:/Users/vviterbo/Zotero/storage/TUJNL5L8/00268970701691611.html:text/
+  \verb html
+  \endverb
+  \field{journaltitle}{Molecular Physics}
+  \field{month}{10}
+  \field{year}{2007}
+  \field{urlday}{10}
+  \field{urlmonth}{06}
+  \field{urlyear}{2019}
+\endentry
+
+\entry{vandevondele_gaussian_2007}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {VandeVondele}{V.}%
+     {Joost}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hutter}{H.}%
+     {Jürg}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {en}%
+  }
+  \strng{namehash}{VJHJ1}
+  \strng{fullhash}{VJHJ1}
+  \verb{doi}
+  \verb 10.1063/1.2770708
+  \endverb
+  \field{issn}{0021-9606, 1089-7690}
+  \field{number}{11}
+  \field{pages}{114105}
+  \field{title}{Gaussian basis sets for accurate calculations on molecular
+  systems in gas and condensed phases}
+  \verb{url}
+  \verb http://aip.scitation.org/doi/10.1063/1.2770708
+  \endverb
+  \field{volume}{127}
+  \verb{file}
+  \verb VandeVondele and Hutter - 2007 - Gaussian basis sets for accurate calcu
+  \verb lations on m.pdf:/Users/vviterbo/Zotero/storage/U58Q4RAK/VandeVondele a
+  \verb nd Hutter - 2007 - Gaussian basis sets for accurate calculations on m.p
+  \verb df:application/pdf
+  \endverb
+  \field{journaltitle}{The Journal of Chemical Physics}
+  \field{month}{09}
+  \field{year}{2007}
+  \field{urlday}{10}
+  \field{urlmonth}{06}
+  \field{urlyear}{2019}
 \endentry
 
 \lossort
